@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h1 id="titulo">Lista de tarefas</h1>
+    <p id="paragrafo">Sistema para registro de tarefas diárias, planos de estudos, criado usando html, css e javascript o relatório será criado para que possa salvar tarefas.</p>
+    <div class="container">
+
+        <div class="containerLista">
+            
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome da tarefa">
+            <label for="dataTarefa">Data</label>
+            <input type="date" name="dataTarefa" id="dataTarefa">
+            <label for="prioridades">Prioridades</label>
+            <select id="prioridades">
+                <option value="1" class="prioridade">Alta prioridade</option>
+                <option value="2" class="prioridade">Média prioridade</option>
+                <option value="3" class="prioridade">Baixa prioridade</option>
+            </select>
+            <button id="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+    <div id="tarefasContainer">
+        <div id="containerTarefas"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
